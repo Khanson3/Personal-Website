@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Personal Webpage: Kyle Hanson</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <style>
+    body {
+      background: url("images/SUNY_Binghamton.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    img[class="pic"] {
+      position: absolute;
+      width:18em;
+      height: auto;
+      top: 15%;
+      left: 50%;
+      margin-left: -9.5em;
+      border: .5em solid #005A43;
+      border-radius: 20px;
+    }
+    p {
+      text-align: center;
+      margin-top: 24.5%;
+      font-size: 2em;
+      font-family: 'Merriweather', serif;
+    }
+    ul {
+      position: fixed;
+      font-size: 1.3em;
+      left: 27em;
+      top: 19em;
+    }
+    div {
+      text-align: center;
+      margin-top: 8em;
+    }
+    input[type="submit"] {
+      background-color: #005A43;
+      border-color: #6BC04B;
+      color: #CEDC00;
+    }
+    h2 {
+      color: green;
+    }
+    @media(max-width: 1400px) {
+      img[class="pic"] {
+        width: 375px;
+        margin-left: -195.5px;
+        top: 10%;
+      }
+      div {
+        margin-top: 30%;
+        font-size: 20px;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      input[type="email"] {
+        width: 230px;
+        height: 30px;
+      }
+      input[type="submit"] {
+        width: 80px;
+        height: 29px;
+        padding: 5px 0 5px 0;
+      }
+      p {
+        font-weight: bold;
+        font-size: 40px;
+        margin-top: 47%
+      }
+      ul {
+        line-height: 50px;
+        font-size: 30px;
+        left: 9em;
+        top: 17.5em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <img src="images/Graduation.jpg" class="pic">
+  <p>Kyle Hanson</p>
+  <ul style="list-style-type:none">
+    <li>School: Binghamton University</li>
+    <li>Major: Computer Science</li>
+    <li>Year: Junior</li>
+  </ul>
+	<form method="post" name="emailform" action="send_email.php">
+ 	 <div>
+   	 <h2>Enter your email for more information:</h2>
+ 	   <input type="email" placeholder="Enter Your Email" name="email">
+ 	   <input type="submit">
+	  </div>
+	</form>
+  <script>
+
+  </script>
+</body>
